@@ -4,6 +4,9 @@
     "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "android-studio-wrapper",
+    "tags": [
+	"proprietary"
+    ],
     "finish-args": [
         "--socket=x11",
         "--socket=pulseaudio",
@@ -24,7 +27,7 @@
             "name": "android-studio",
             "buildsystem": "simple",
             "build-commands": [
-                "install -D apply_extra /app/bin/apply_extra",
+                "tar -xf android-studio.tar.gz -C /app",
                 "install -D android-studio.sh /app/bin/android-studio",
                 "install -Dm644 com.google.AndroidStudio.png /app/share/icons/hicolor/128x128/apps/com.google.AndroidStudio.png",
                 "install -Dm644 com.google.AndroidStudio.appdata.xml /app/share/appdata/com.google.AndroidStudio.appdata.xml",
@@ -44,9 +47,8 @@
                     "path": "com.google.AndroidStudio.png"
                 },
                 {
-                    "type": "extra-data",
-                    "filename": "android-studio.tar.gz",
-                    "size": 1227794007,
+                    "type": "file",
+                    "dest-filename": "android-studio.tar.gz",
                     "only-arches": [
                         "x86_64"
                     ],
@@ -55,17 +57,9 @@
                 },
                 {
                     "type": "script",
-                    "dest-filename": "apply_extra",
-                    "commands": [
-                        "tar xzf /app/extra/android-studio.tar.gz",
-                        "rm -f /app/extra/android-studio.tar.gz"
-                    ]
-                },
-                {
-                    "type": "script",
                     "dest-filename": "android-studio.sh",
                     "commands": [
-                        "exec env \"PATH=$PATH:$EXTRA_PATH\" /app/extra/android-studio/bin/studio.sh"
+                        "exec env \"PATH=$PATH:/app/android-studio\" /app/android-studio/bin/studio.sh"
                     ]
                 }
             ]
