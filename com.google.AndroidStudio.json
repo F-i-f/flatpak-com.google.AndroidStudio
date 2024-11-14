@@ -26,10 +26,10 @@
       "name": "android-studio",
       "buildsystem": "simple",
       "build-commands": [
-        "tar -xf android-studio.tar.gz -C /app",
-        "install -Dm644 com.google.AndroidStudio.svg /app/share/icons/hicolor/scalable/apps/com.google.AndroidStudio.svg",
-        "install -Dm644 com.google.AndroidStudio.metainfo.xml /app/share/metainfo/com.google.AndroidStudio.metainfo.xml",
-        "install -Dm644 com.google.AndroidStudio.desktop /app/share/applications/com.google.AndroidStudio.desktop"
+        "tar -xf android-studio.tar.gz -C ${FLATPAK_DEST}",
+        "install -Dm644 com.google.AndroidStudio.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+        "install -Dm644 com.google.AndroidStudio.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 com.google.AndroidStudio.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       ],
       "sources": [
         {
