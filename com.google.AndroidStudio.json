@@ -16,7 +16,7 @@
     "--device=all",
     "--filesystem=home",
     "--allow=multiarch",
-    "--env=JAVA_HOME=/app/extra/android-studio/jbr",
+    "--env=JAVA_HOME=/app/android-studio/jbr",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
     "--talk-name=com.canonical.AppMenu.Registrar"
@@ -27,9 +27,9 @@
       "buildsystem": "simple",
       "build-commands": [
         "tar -xf android-studio.tar.gz -C ${FLATPAK_DEST}",
-        "install -Dm644 com.google.AndroidStudio.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
-        "install -Dm644 com.google.AndroidStudio.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
-        "install -Dm644 com.google.AndroidStudio.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop"
       ],
       "sources": [
         {
@@ -60,12 +60,19 @@
       "buildsystem": "meson",
       "config-opts": [
         "-Deditor_binary=/app/android-studio/bin/studio",
-        "-Dprogram_name=android-studio-wrapper"
+        "-Dprogram_name=android-studio-wrapper",
+        "-Deditor_title=Android Studio",
+        "-Dfirst_run_template=README.md",
+        "-Dflagfile_prefix=flatpak-studio"
       ],
       "sources": [
         {
           "type": "dir",
           "path": "ide-flatpak-wrapper"
+        },
+        {
+          "type": "file",
+          "path": "README.md"
         }
       ]
     },
