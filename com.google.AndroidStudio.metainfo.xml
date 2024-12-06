@@ -17,8 +17,8 @@
         <content_attribute id="social-info">moderate</content_attribute>
     </content_rating>
     <branding>
-        <color scheme_preference="light" type="primary">#ffffff</color>
-        <color scheme_preference="dark" type="primary">#121212</color>
+        <color scheme_preference="light" type="primary">#d2e3fc</color>
+        <color scheme_preference="dark" type="primary">#132137</color>
     </branding>
     <categories>
         <category>Development</category>
@@ -49,43 +49,35 @@
     </supports>
     <screenshots>
         <screenshot type="default">
-            <image>https://developer.android.com/static/images/studio/studio-hero.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/studio-hero.png</image>
             <caption>Android Studio Showing the structure of a project</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/studio/videos/home/gemini-intro-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/gemini-intro-poster.png</image>
             <caption>Try Gemini in Android Studio</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/studio-idx_dt.png</image>
-            <caption>Android Studio in your web browser</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://developer.android.com/studio/videos/home/compose-animation-preview-poster.png</image>
-            <caption>Compose design tools</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://developer.android.com/studio/videos/home/studio-compose-editor-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/studio-compose-editor-poster.png</image>
             <caption>Intelligent code editor</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/flexible-build-system.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/flexible-build-system.png</image>
             <caption>Flexible build system</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/studio/videos/home/emulator-foldable-device-poster.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/emulator-foldable-device-poster.png</image>
             <caption>Easily emulate any device</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/images/studio/apk-bundle-analyzer.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/apk-bundle-analyzer.png</image>
             <caption>Android App Bundle</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/studio/images/project-android-view.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/project-android-view.png</image>
             <caption>Project files in Android project view</caption>
         </screenshot>
         <screenshot>
-            <image>https://developer.android.com/static/studio/images/lint-inspection-results.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.google.AndroidStudio/refs/heads/master/screenshots/lint-inspection-results.png</image>
             <caption>The results of a lint inspection in Android Studio</caption>
         </screenshot>
     </screenshots>
