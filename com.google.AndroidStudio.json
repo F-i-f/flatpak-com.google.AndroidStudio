@@ -26,6 +26,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "tar -xf android-studio.tar.gz -C ${FLATPAK_DEST}",
+        "install -D -t ${FLATPAK_DEST}/bin/ android-studio-wrapper",
         "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
         "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
         "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop"
@@ -51,26 +52,13 @@
           ],
           "url": "https://dl.google.com/dl/android/studio/ide-zips/2024.3.2.14/android-studio-2024.3.2.14-linux.tar.gz",
           "sha256": "2c7b4f0097b8668d85718c0ed23e75bedf1050d3d0d83c1fd944fb1fbd83c8a5"
-        }
-      ]
-    },
-    {
-      "name": "ide-flatpak-wrapper",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Deditor_binary=/app/android-studio/bin/studio",
-        "-Dprogram_name=android-studio-wrapper",
-        "-Deditor_title=Android Studio",
-        "-Dflagfile_prefix=flatpak-studio"
-      ],
-      "sources": [
-        {
-          "type": "dir",
-          "path": "ide-flatpak-wrapper"
         },
         {
-          "type": "file",
-          "path": "README.md"
+          "type": "script",
+          "dest-filename": "android-studio-wrapper",
+          "commands": [
+            "/app/android-studio/bin/studio $@"
+          ]
         }
       ]
     },
