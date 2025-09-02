@@ -1,7 +1,7 @@
 {
   "app-id": "com.google.AndroidStudio",
   "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "24.08",
+  "runtime-version": "25.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "android-studio-wrapper",
   "tags": [
@@ -63,7 +63,6 @@
           ]
         }
       ]
-    },
-    "shared-modules/libsecret/libsecret.json"
+    }
   ]
 }
