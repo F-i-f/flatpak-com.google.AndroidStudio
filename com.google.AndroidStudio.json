@@ -51,8 +51,8 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://dl.google.com/dl/android/studio/ide-zips/2025.3.4.7/android-studio-panda4-patch1-linux.tar.gz",
-          "sha256": "aae8f332f124afd23ca495dc770915a456da7480c8f859e01535ad42fcb4ca06"
+          "url": "https://dl.google.com/dl/android/studio/ide-zips/2026.1.1.8/android-studio-quail1-linux.tar.gz",
+          "sha256": "0c1fa4ba3cfabd07e48a90e00a5fa2ea2a82cd5870833dada5b0290c817d83d3"
         },
         {
           "type": "script",
