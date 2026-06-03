@@ -99,6 +99,16 @@
     <releases>
         <!-- https://dl.google.com/android/studio/patches/updates.xml -->
         <!-- stable release -->
+        <release date="2026-06-02" version="2026.1.1.8">
+            <url type="details">https://developer.android.com/studio/releases</url>
+            <description>
+                <p>Android Studio Quail 1 | 2026.1.1</p>
+                <p>Android Gradle Plugin 9.2.1</p>
+                <ul>
+                    <li>Suggested fixes for crashes with Agent integration in AQI</li>
+                </ul>
+            </description>
+        </release>
         <release date="2026-05-05" version="2025.3.4.7">
             <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2025.3.4#android-studio-panda-4-|-2025.3.4-patch-1</url>
             <description>
@@ -117,7 +127,7 @@
             </description>
         </release>
         <release date="2026-04-21" version="2025.3.4.6">
-            <url type="details">https://developer.android.com/studio/releases</url>
+            <url type="details">https://developer.android.com/studio/releases/past-releases/as-panda-4-release-notes</url>
             <description>
                 <p>Android Studio Panda 4 | 2025.3.4</p>
                 <p>Android Gradle Plugin 9.2.0</p>
@@ -157,20 +167,6 @@
                     <li>Agent Shell Sandbox for Gemini in Android Studio</li>
                     <li>Agent Notifications</li>
                     <li>Shell tool for Gemini in Android Studio</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2026-03-03" version="2025.3.2.6">
-            <url type="details">https://developer.android.com/studio/releases/past-releases/as-panda-2-release-notes</url>
-            <description>
-                <p>Android Studio Panda 2 | 2025.3.2</p>
-                <p>Android Gradle Plugin 9.1.0</p>
-                <ul>
-                    <li>Recomposition state reads in the Layout Inspector</li>
-                    <li>Create a new project with AI</li>
-                    <li>Layout Inspector 3D mode deprecation</li>
-                    <li>Update dependencies with the AI agent</li>
-                    <li>Monochrome icon support in Asset Studio</li>
                 </ul>
             </description>
         </release>
