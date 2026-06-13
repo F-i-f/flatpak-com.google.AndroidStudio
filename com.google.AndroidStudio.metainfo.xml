@@ -99,6 +99,13 @@
     <releases>
         <!-- https://dl.google.com/android/studio/patches/updates.xml -->
         <!-- stable release -->
+        <release date="2026-06-11" version="2026.1.1.9">
+            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2026.1.1#android-studio-quail-1-|-2026.1.1-patch-1</url>
+            <description>
+                <p>Android Studio Quail 1 | 2026.1.1 Patch 1</p>
+                <p>Android Gradle Plugin 9.2.1</p>
+            </description>
+        </release>
         <release date="2026-06-02" version="2026.1.1.8">
             <url type="details">https://developer.android.com/studio/releases</url>
             <description>
@@ -143,22 +150,6 @@
             <description>
                 <p>Android Studio Panda 3 | 2025.3.3 Patch 1</p>
                 <p>Android Gradle Plugin 9.1.1</p>
-                <ul>
-                    <li>Context Compression &amp; Usage Improvements for Gemini in Android Studio</li>
-                    <li>Skills support for Gemini in Android Studio</li>
-                    <li>Manage permissions in Agent Mode</li>
-                    <li>New Project template for Car App Library</li>
-                    <li>Agent Shell Sandbox for Gemini in Android Studio</li>
-                    <li>Agent Notifications</li>
-                    <li>Shell tool for Gemini in Android Studio</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2026-04-02" version="2025.3.3.6">
-            <url type="details">https://developer.android.com/studio/releases/past-releases/as-panda-3-release-notes</url>
-            <description>
-                <p>Android Studio Panda 3 | 2025.3.3</p>
-                <p>Android Gradle Plugin 9.1.0</p>
                 <ul>
                     <li>Context Compression &amp; Usage Improvements for Gemini in Android Studio</li>
                     <li>Skills support for Gemini in Android Studio</li>
