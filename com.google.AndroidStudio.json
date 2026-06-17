@@ -51,8 +51,8 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://dl.google.com/dl/android/studio/ide-zips/2026.1.1.9/android-studio-quail1-patch1-linux.tar.gz",
-          "sha256": "2e29b43783b7ffd62f62389831fc3f260df1b8f673e5125caf588e75112e8eb5"
+          "url": "https://dl.google.com/dl/android/studio/ide-zips/2026.1.1.10/android-studio-quail1-patch2-linux.tar.gz",
+          "sha256": "fbd3f116d12caed724ea8da0d2cdae7e791170f79f2aa11273ea0f2d22a224dc"
         },
         {
           "type": "script",
