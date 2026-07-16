@@ -99,6 +99,20 @@
     <releases>
         <!-- https://dl.google.com/android/studio/patches/updates.xml -->
         <!-- stable release -->
+        <release date="2026-06-14" version="2026.1.2.10">
+            <url type="details">https://developer.android.com/studio/releases</url>
+            <description>
+                <p>Android Studio Quail 2 | 2026.1.2</p>
+                <p>Android Gradle Plugin 9.3.0</p>
+                <ul>
+                    <li>More agent skills.</li>
+                    <li>Build full-stack apps with Firebase in Agent Mode.</li>
+                    <li>Parallel conversations.</li>
+                    <li>Android CLI.</li>
+                    <li>LeakCanary in Android Studio Profiler.</li>
+                </ul>
+            </description>
+        </release>
         <release date="2026-06-16" version="2026.1.1.10">
             <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2026.1.1#android-studio-quail-1-|-2026.1.1-patch-2</url>
             <description>
@@ -120,7 +134,7 @@
             </description>
         </release>
         <release date="2026-06-02" version="2026.1.1.8">
-            <url type="details">https://developer.android.com/studio/releases</url>
+            <url type="details">https://developer.android.com/studio/releases/past-releases/as-quail-1-release-notes</url>
             <description>
                 <p>Android Studio Quail 1 | 2026.1.1</p>
                 <p>Android Gradle Plugin 9.2.1</p>
@@ -143,18 +157,6 @@
                     <li>Planning Mode.</li>
                     <li>Developer verification support.</li>
                     <li>Agent Web Search</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2026-04-21" version="2025.3.4.6">
-            <url type="details">https://developer.android.com/studio/releases/past-releases/as-panda-4-release-notes</url>
-            <description>
-                <p>Android Studio Panda 4 | 2025.3.4</p>
-                <p>Android Gradle Plugin 9.2.0</p>
-                <ul>
-                    <li>Gemini API starter template.</li>
-                    <li>Google One integration for Gemini in Android Studio.</li>
-                    <li>Generate unit tests with Gemini.</li>
                 </ul>
             </description>
         </release>
