@@ -99,6 +99,20 @@
     <releases>
         <!-- https://dl.google.com/android/studio/patches/updates.xml -->
         <!-- stable release -->
+        <release date="2026-07-23" version="2026.1.2.11">
+            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2026.1.2#android-studio-quail-2-|-2026.1.2-patch-1</url>
+            <description>
+                <p>Android Studio Quail 2 | 2026.1.2 Patch 1</p>
+                <p>Android Gradle Plugin 9.3.1</p>
+                <ul>
+                    <li>More agent skills.</li>
+                    <li>Build full-stack apps with Firebase in Agent Mode.</li>
+                    <li>Parallel conversations.</li>
+                    <li>Android CLI.</li>
+                    <li>LeakCanary in Android Studio Profiler.</li>
+                </ul>
+            </description>
+        </release>
         <release date="2026-06-14" version="2026.1.2.10">
             <url type="details">https://developer.android.com/studio/releases</url>
             <description>
@@ -140,23 +154,6 @@
                 <p>Android Gradle Plugin 9.2.1</p>
                 <ul>
                     <li>Suggested fixes for crashes with Agent integration in AQI</li>
-                </ul>
-            </description>
-        </release>
-        <release date="2026-05-05" version="2025.3.4.7">
-            <url type="details">https://developer.android.com/studio/releases/fixed-bugs/studio/2025.3.4#android-studio-panda-4-|-2025.3.4-patch-1</url>
-            <description>
-                <p>Android Studio Panda 4 | 2025.3.4 Patch 1</p>
-                <p>Android Gradle Plugin 9.2.1</p>
-                <ul>
-                    <li>Gemini API starter template.</li>
-                    <li>Google One integration for Gemini in Android Studio.</li>
-                    <li>Generate unit tests with Gemini.</li>
-                    <li>Next Edit Prediction (NEP).</li>
-                    <li>Ask Mode.</li>
-                    <li>Planning Mode.</li>
-                    <li>Developer verification support.</li>
-                    <li>Agent Web Search</li>
                 </ul>
             </description>
         </release>
