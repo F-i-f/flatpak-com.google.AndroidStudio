@@ -74,3 +74,13 @@ chattr +C $HOME/.var/app/com.google.AndroidStudio/config/.android/avd
 
 > [!IMPORTANT]
 > This should only be done once, before creating any virtual devices. AVDs created prior won't be affected.
+
+## Wayland
+
+By default Android Studio runs on X11 (XWayland), however it can be configured to run on Wayland. This is not yet declared stable by [JetBrains](https://blog.jetbrains.com/platform/2026/02/wayland-by-default-in-2026-1-eap/). The AVD Emulator still runs only on X11.
+
+Wayland can be enabled by granting it the _--socket=wayland_ permission:
+
+`flatpak override --user --socket=wayland com.google.AndroidStudio`
+
+Using Wayland instead of XWayland avoids the mouse stutter experienced by some users while also upping the overall responsiveness of the application.
