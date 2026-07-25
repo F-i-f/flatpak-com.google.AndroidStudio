@@ -82,3 +82,5 @@ By default Android Studio runs on X11 (XWayland), however it can be configured t
 Wayland can be enabled by granting it the _--socket=wayland_ permission:
 
 `flatpak override --user --socket=wayland com.google.AndroidStudio`
+
+Using Wayland instead of XWayland avoids the mouse stutter experienced by some users while also upping the overall responsiveness of the application.
