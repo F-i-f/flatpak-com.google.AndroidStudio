@@ -16,7 +16,8 @@
     "--allow=multiarch",
     "--env=JAVA_HOME=/app/extra/jbr",
     "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets"
+    "--talk-name=org.freedesktop.secrets",
+    "--system-talk-name=org.freedesktop.Avahi"
   ],
   "modules": [
     {
