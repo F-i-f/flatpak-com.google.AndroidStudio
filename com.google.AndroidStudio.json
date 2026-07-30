@@ -5,19 +5,20 @@
   "sdk": "org.freedesktop.Sdk",
   "command": "android-studio-wrapper",
   "finish-args": [
-    "--socket=x11",
-    "--socket=pulseaudio",
-    "--socket=ssh-auth",
-    "--socket=gpg-agent",
+    "--allow=multiarch",
+    "--device=all",
+    "--env=JAVA_HOME=/app/extra/jbr",
+    "--filesystem=home",
     "--share=ipc",
     "--share=network",
-    "--device=all",
-    "--filesystem=home",
-    "--allow=multiarch",
-    "--env=JAVA_HOME=/app/extra/jbr",
+    "--socket=fallback-x11",
+    "--socket=gpg-agent",
+    "--socket=pulseaudio",
+    "--socket=ssh-auth",
+    "--socket=wayland",
+    "--system-talk-name=org.freedesktop.Avahi",
     "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--system-talk-name=org.freedesktop.Avahi"
+    "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
     {
