@@ -89,12 +89,12 @@ chattr +C $HOME/.var/app/com.google.AndroidStudio/config/.android/avd
 > [!IMPORTANT]
 > This should only be done once, before creating any virtual devices. AVDs created prior won't be affected.
 
-## Wayland
+## AVD Emulator fix for Wayland
 
-By default Android Studio runs on X11 (XWayland), however it can be configured to run on Wayland. This is not yet declared stable by [JetBrains](https://blog.jetbrains.com/platform/2026/02/wayland-by-default-in-2026-1-eap/). The AVD Emulator still runs only on X11.
+By default Android Studio now runs on Wayland, however the AVD Emulator still runs on X11 (XWayland) due to [missing the latest Qt libraries](https://issuetracker.google.com/issues/378421876) with Wayland support.
 
-Wayland can be enabled by granting it the _--socket=wayland_ permission:
+Since the _fallback-x11_ socket is included in the manifest to cater for users on X11 an issue arise where AVD stops working. This happens due to the _fallback-x11_ permission hiding X11 completely when Wayland is detected.
 
-`flatpak override --user --socket=wayland com.google.AndroidStudio`
+To make AVD work again you need to explicitly enable X11 by granting Flatpak the _--socket=x11_ permission. Additionally you need to remove the default _fallback-x11_ socket:
 
-Using Wayland instead of XWayland avoids the mouse stutter experienced by some users while also upping the overall responsiveness of the application.
+`flatpak override --user --socket=x11 --nosocket=fallback-x11 com.google.AndroidStudio`
