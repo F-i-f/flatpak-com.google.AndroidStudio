@@ -24,47 +24,6 @@
   ],
   "modules": [
     {
-      "name": "android-studio",
-      "buildsystem": "simple",
-      "build-commands": [
-        "tar -xf android-studio.tar.gz -C ${FLATPAK_DEST}",
-        "install -D -t ${FLATPAK_DEST}/bin/ android-studio-wrapper",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "com.google.AndroidStudio.desktop"
-        },
-        {
-          "type": "file",
-          "path": "com.google.AndroidStudio.metainfo.xml"
-        },
-        {
-          "type": "file",
-          "path": "com.google.AndroidStudio.svg"
-        },
-        {
-          "type": "file",
-          "dest-filename": "android-studio.tar.gz",
-          "only-arches": [
-            "x86_64"
-          ],
-          "url": "https://dl.google.com/dl/android/studio/ide-zips/2026.2.2.10/android-studio-rabbit2-patch2-linux.tar.gz",
-          "sha256": "0ca322d00c07d6f15703abd1b4ff79b9942a1b51f75a9703fc1d09e1cf249f45"
-        },
-        {
-          "type": "script",
-          "dest-filename": "android-studio-wrapper",
-          "commands": [
-            "/app/android-studio/bin/studio $@"
-          ]
-        }
-      ]
-    },
-    {
       "name": "dbus",
       "buildsystem": "meson",
       "config-opts": [
@@ -121,6 +80,47 @@
       ],
       "modules": [
         "shared-modules/glu/glu-9.json"
+      ]
+    },
+    {
+      "name": "android-studio",
+      "buildsystem": "simple",
+      "build-commands": [
+        "tar -xf android-studio.tar.gz -C ${FLATPAK_DEST}",
+        "install -D -t ${FLATPAK_DEST}/bin/ android-studio-wrapper",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "com.google.AndroidStudio.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.google.AndroidStudio.metainfo.xml"
+        },
+        {
+          "type": "file",
+          "path": "com.google.AndroidStudio.svg"
+        },
+        {
+          "type": "file",
+          "dest-filename": "android-studio.tar.gz",
+          "only-arches": [
+            "x86_64"
+          ],
+          "url": "https://dl.google.com/dl/android/studio/ide-zips/2026.2.2.11/android-studio-rabbit2-patch3-linux.tar.gz",
+          "sha256": "1c7ccf6dbb0ac6376e3b15e536096f1878621b4b5586d81e22510cd835f1438d"
+        },
+        {
+          "type": "script",
+          "dest-filename": "android-studio-wrapper",
+          "commands": [
+            "/app/android-studio/bin/studio $@"
+          ]
+        }
       ]
     }
   ]
